@@ -12,7 +12,7 @@ const LoginForm = () => {
             .min(6, 'Password must be at least 6 characters')
             .max(20, 'Password must be less than 20 characters')
     })
-    const handleSubmit = (values: { login: string, password: string }) => {
+    const handleSubmit = (values: { login: string; password: string }) => {
         console.log(values)
     }
     return (
@@ -25,8 +25,8 @@ const LoginForm = () => {
                 </div>
                 <div className="form-group">
                     <label htmlFor="login">Password</label>
-                    <Field id="Password" type="Password" name="password" />
-                    <ErrorMessage name="Password" component="div" className="error" />
+                    <Field id="password" type="password" name="password" />
+                    <ErrorMessage name="password" component="div" className="error" />
                 </div>
 
                 <button type="submit">Submit</button>
