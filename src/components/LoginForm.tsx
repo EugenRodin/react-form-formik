@@ -24,7 +24,7 @@ const LoginForm = () => {
                     <ErrorMessage name="login" component="div" className="error" />
                 </div>
                 <div className="form-group">
-                    <label htmlFor="login">Password</label>
+                    <label htmlFor="password">Password</label>
                     <Field id="password" type="password" name="password" />
                     <ErrorMessage name="password" component="div" className="error" />
                 </div>
